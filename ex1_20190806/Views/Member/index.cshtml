@@ -1,0 +1,52 @@
+﻿@model List<ex1_20190806.Models.SqlViewModel>
+
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>index</h2>
+<body>
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <th>CustomerId</th>
+            <th>Name</th>
+            <th>Country</th>
+        </tr>
+        @foreach (var row in Model)
+        {
+            <tr>
+                <td>@row.CustomerID</td>
+                <td>@row.CompanyName</td>
+                
+            </tr>
+        }
+    </table>
+</body>
+
+@*@using (Html.BeginForm("Index", "Member", FormMethod.Post))
+{
+<p>
+    @Html.LabelFor(x => x.Name):@Html.TextBoxFor(x => x.Name),new { Style="background:#cccccc;" } @Html.ValidationMessageFor(model => model.Name)
+</p>
+    <p>@Html.LabelFor(x => x.Phone):@Html.TextBoxFor(x => x.Phone)</p>
+    <p>@Html.LabelFor(x => x.Email):@Html.TextBoxFor(x => x.Email)</p>
+    <input type="submit" value="送出">
+    foreach (var item in Model.Car)
+    {
+        <p>@item</p>
+    }
+
+}*@
+
+@*<form action="/Member/Index" method="post">
+    </form>*@
+@**@
+
+
+
+
+
+
+
+
+
